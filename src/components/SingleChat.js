@@ -81,7 +81,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          `/api/message`,
+          `https://chat-server-9qca.onrender.com/api/message`,
           {
             content: newMessage,
             chatId: selectedChat._id,
